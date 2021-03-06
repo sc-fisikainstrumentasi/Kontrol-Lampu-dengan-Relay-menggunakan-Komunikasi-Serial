@@ -28,13 +28,13 @@ void loop()
     {
       if (Serial.parseInt() == 1)//membuat code dalam bentuk angka 1 untuk menyalaan lampu
         {
-          digitalWrite(LED, HIGH);//Memberi Relay tegangan Max (5 Volt)
+          digitalWrite(Relay, HIGH);//Memberi Relay tegangan Max (5 Volt)
           Serial.println("Command completed Lampu turned ON"); //mengirim data string tersebut ke Serial Monitor
         }
 
       else if (Serial.parseInt()== 2)//membuat code dalam bentuk angka 2 untuk Mematikan Lampu
         {
-          digitalWrite(13, LOW);//Memberi Relay tegangan Min (0 Volt)
+          digitalWrite(Relay, LOW);//Memberi Relay tegangan Min (0 Volt)
           Serial.println("Command completed Lampu turned OFF");//mengirim data string tersebut ke Serial Monitor
 
         }
